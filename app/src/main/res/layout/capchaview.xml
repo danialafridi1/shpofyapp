@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/capId"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verify Number"
+            app:hintTextColor="#fff"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/capNumber"
+
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="#03A9F4"
+                android:textColorHint="#222"
+                android:textColor="#222"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Verify"
+            android:id="@+id/btnVerifyCode"
+            app:backgroundTint="@null"
+            android:background="#FF5722"
+
+            android:textColor="#fff"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
